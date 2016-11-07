@@ -1,0 +1,249 @@
+/*Box sizing universel */
+
+*{
+    box-sizing: border-box;
+}
+
+/*Styles pour Header */
+
+.header{
+    background-color: #2b2b2b;
+    color: grey;
+    text-align:center;
+    width:100%;
+}
+.header img{
+    width:100%;
+    max-width: 551px;
+}
+
+/*Styles de navigation */
+
+nav ul{
+    list-style:none;
+    padding-left: 0;
+    padding-bottom: 10px;
+    margin-bottom:0;
+}
+
+nav ul li{
+    margin-bottom: 10px;
+}
+
+nav ul a{
+    color:white;
+    text-decoration: none;
+}
+
+/*Styles pour le cover et introduction */
+
+.cover{
+    background-image: url(../images/covers/image-top-480.jpg);
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Styles pour comptétences */
+
+#competences{
+    margin-top: 20px;
+}
+h2{
+    text-align:center;
+    margin: 0 auto;
+    max-width:75%;
+}
+#competences li{
+    color:white;
+    height:100px;
+    position: relative;
+}
+.competence{
+    position: absolute;
+    display:block;
+    top: 40%;
+    left:40%;
+}
+.css3{
+    background-color: #0c73b8;
+}
+.html5{
+    background-color:#e55126;
+}
+.javascript{
+    background-color: #e5a228;
+}
+.wp{
+    background-color:#21759b;
+}
+
+
+#competences ul{
+    list-style:none;
+    padding-left:0;
+}
+
+#competences img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Styles de portfolio-accueil */
+
+.portfolio-projets{
+    display:flex;
+    flex-direction: column;
+}
+
+.portfolio-projets img{
+    width:100%;
+}
+
+
+.titre-projet{
+    display: block;
+    text-align:center;
+    background-color: #BFBFBF;
+    padding:2.5% 0;
+    margin-top: -8px;
+}
+.portfolio-projets a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: .8em;
+}
+
+/*Styles de page de projet*/
+.page-projet{
+    display: flex;
+    flex-direction: column;
+}
+.image-principale{
+    max-width: 98%;
+    align-self: center;
+}
+.image-principale img{
+    width: 100%;
+}
+.page-projet h1{
+    font-weight: 300;
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.description-projet{
+    text-align: center;
+    font-weight: 200;
+}
+
+.description-projet img{
+    max-width: 99%;
+}
+
+.details-projet{
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.page-projet h2{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom:20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    border:none;
+}
+.services-portfolio, .outils-portfolio{
+    text-transform: none;
+    font-weight: 200;
+}
+.details-projet li{
+    margin-top:10px;
+}
+.lien-site{
+    text-align: center;
+    text-transform: uppercase;
+}
+.details-projet ul{
+    padding-left: 0;
+}
+
+.page-projet h3{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.infos-projet{
+    background-color:#F3F3F3;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom:20px;
+}
+.lien-site a{
+    color:#8E8E8E;
+    text-decoration: none;
+}
+
+/*Styles pour la page contact */
+.page-contact{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+.page-contact h1{
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.page-contact p{
+    text-align: center;
+    font-weight: 200;
+    max-width: 90%;
+    margin: 10px auto;
+}
+.liens-contact{
+    max-width:60%;
+    margin: 20px auto;
+}
+.fa{
+    display: block;
+    margin:20px 10px; 
+    font-size: 1.2em;
+}
+.top-contact{
+    background-color: #F3F3F3;
+}
+.texte-liens{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+/*Styles de footer */
+footer{
+    background-color: #272727;
+    color:white;
+    padding:20px 0;
+    text-align: center;
+    margin-top:50px;
+}
+
+/*hack pour un footer sticky */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}

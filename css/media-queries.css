@@ -1,0 +1,186 @@
+/*Styles pour medias queries versions plus larges */
+@media (min-width:300px){
+    .cover{ 
+    background-image: url(../images/covers/image-top-large.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    }
+    .cover h1{
+        font-size: 2em;
+        color:#fff;
+    }
+    
+    .cover img{
+        max-width: 80%;
+    }
+    .cover img{
+        margin-left:20px;
+    }
+    .dernier-accolade{
+        color:white;
+        font-size:2em;
+        margin:-20px 0 0 -200px;
+    
+    }
+    .cover .texte-top{
+        margin-left:100px;
+    }
+}
+
+@media (min-width:480px){
+    nav ul{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .cover h1, .dernier-accolade{
+        font-size: 2.5em;
+    }
+    .dernier-accolade{
+        margin:-20px 0 0 -300px;
+    }
+}
+
+@media (min-width:640px){
+    #competences ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #competences ul li{
+        flex-basis: 50%;
+        padding: 5px;
+    }
+    
+    .portfolio-projets{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .portfolio-projets p{
+        flex-basis: 50%;
+        padding:5px;
+    }
+    .cover h1, .dernier-accolade{
+        font-size: 3em;
+    }
+    .dernier-accolade{
+        margin:-20px 0 0 -420px;
+    }
+    
+    
+    .cover img{
+        max-width:60%;
+    }
+}
+
+@media (min-width:768px){
+    nav ul li{
+        flex-grow: 1;
+    }
+    .cover h1, .dernier-accolade{
+        font-size: 3.5em;
+    }
+    .dernier-accolade{
+        margin:-20px 0 0 -540px;
+    }
+}
+@media (min-width:1024px){
+    .header{
+        display: flex;
+        justify-content:space-between;
+        
+    }
+    .header img{
+        width:90%;
+    }
+    nav{
+        width:50%;
+    }
+    
+    .portfolio-projets p{
+        flex-basis: 33%;
+        padding:5px;
+    }
+    
+    #competences ul li{
+        flex-basis: 25%;
+        padding: 5px;
+    }
+    
+    .cover h1, .dernier-accolade{
+        font-size: 4.5em;
+    }
+    .dernier-accolade{
+        margin:-20px 0 0 -780px;
+    }
+    
+    .cover h1{
+        margin-right:160px;
+    }
+    
+}
+@media (min-width:1280px){
+    nav ul{
+        padding-top:5px;
+    }
+    .cover h1, .dernier-accolade{
+        font-size: 4.5em;
+    }
+}
+
+/*Styles Media Queries pour la page de projet */
+
+@media (min-width:480px){
+    .details-projet{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+    .services-portfolio{
+        align-self: flex-start;
+        margin-right:40px;
+    }
+    .image-principale{
+        align-self: center;
+        max-width: 95%;
+    }
+    .image-principale img{
+        width: 100%;
+    }
+    .details-projet li{
+        padding:0 15px;
+    }
+    .details-projet{
+        margin:20px auto;
+    }
+}
+@media (min-width:1024px){
+    .page-projet{
+        display: flex;
+    }
+    .image-principale{
+    max-width: 80%;
+}
+    .image-principale img{
+    width: 100%;
+}
+    .description-projet{
+        display:flex;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+    .description-projet img{
+        align-self: flex-start;
+        max-width: 50%;
+        padding:0 10px;
+    }
+    .description-projet p{
+        padding:0 10px;
+        vertical-align: middle;
+    }
+}

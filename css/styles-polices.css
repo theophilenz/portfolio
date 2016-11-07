@@ -1,0 +1,20 @@
+/*Styles pour les polices de caractère*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+#portfolio p{
+    font-size: 1.3em;
+    color: white;
+}
+
+.cover code{
+    font-family:"Open Sans", sans-serif;
+    font-weight: 300;
+}
